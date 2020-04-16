@@ -1,0 +1,37 @@
+<div [ngSwitch]="alert	">
+    <div *ngSwitchCase="'success'">success</div>
+    <div *ngSwitchCase="'warning'">warning</div>
+    <div *ngSwitchCase="'info'">info</div>
+
+    <div *ngSwitchDefault>danger</div>
+</div>
+
+<button class="btn btn-primary mt-2" type="button" (click)="alert='primary'"> Cambiar </button>
+
+<div [ngSwitch]="alert" class="mt-3">
+
+    <div class="alert alert-primary" role="alert" *ngSwitchCase="'primary'">
+        A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-secondary" role="alert" *ngSwitchCase="'secondary'">
+        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-success" role="alert" *ngSwitchCase="'success'">
+        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-danger" role="alert" *ngSwitchCase="'danger'">
+        A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-warning" role="alert" *ngSwitchCase="'warning'">
+        A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-info" role="alert" *ngSwitchCase="'info'">
+        A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-light" role="alert" *ngSwitchCase="'light'">
+        A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-dark" role="alert" *ngSwitchCase="'dark'">
+        A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+</div>
